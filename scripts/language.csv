@@ -1,0 +1,601 @@
+﻿key,zh-cn,en
+common_account,账号,account
+common_add,新增,add
+common_app_name,App名称,app name
+common_back,返回,return
+common_balance,账户余额,balance
+common_cancel,取消,cancel
+common_change_pwd,修改密码,change password
+common_confirm,确定,confirm
+common_confirm_pwd,确认密码,confirm
+common_contant,联系人,contact
+common_create,创建,create
+common_create_time,创建时间,creation time
+common_date,日期,date
+common_delete,删除,delete
+common_delete_cancel,取消删除,undelete
+common_delete_success,删除成功,successfully
+common_desciption,描述,desciption
+common_detail,详情,detail
+common_disable_cancel,禁用取消,disable cancel
+common_disable_status,禁用,disable
+common_disabled_status,已禁用,disabled
+common_edit,编辑,edit
+common_enable_cancel,启用取消,enable cancel
+common_enable_status,启用,enable
+common_hello,您好,hello
+common_input,请输入,ple input
+common_login,登录,login
+common_logout,登出,login out
+common_merchant_back,商家后台,merchant backend
+common_modify,修改,modify
+common_modify_person,修改人,modify person
+common_modify_time,修改时间,modify time
+common_not_enabled_status,未启用,not enable
+common_operate_time,操作时间,operate time
+common_operation,操作,operation
+common_operator,操作人,operator
+common_order,序号,Serial number
+common_password,密码,password
+common_passwordTips,您当前的密码安全系数低，请进行修改密码,"Your current password security factor is low, it is recommended that you change your password immediately"
+common_pwd_disparity,两次密码不一致,different password
+common_remark,备注,remark
+common_required,必填,required
+common_reset_password,重置密码,reset
+common_save,保存,save
+common_save_success,保存成功,successfully
+common_search,搜索,search
+common_search_reset,重置,reset
+common_select_option,请选择,select
+common_status,状态,status
+common_submit,提交,submit
+common_time,时间,time
+common_tips,提示,tips
+common_title,百川商户管理,Merchant Management
+common_to,至,to
+common_type,类型,type
+common_upload,上传,upload
+common_valid_account,用户名,user name
+common_valid_number,只允许输入数字,Only allow numbers
+common_valid_pwd,请输入4-18位字母或数字,Please enter 4-18 letters or numbers
+common_select_time,请选择时间,Please selet time
+common_excel_type,请上传.xls或.xlsx格式的文件，大小不超过2MB,"The type must be excel, and the size must be less than 2M"
+detail_apply_reduce,已申请减免,Applied for reduce
+detail_approve_no,未通过,not approve
+detail_approve_yes,通过,approve
+detail_college,大学及大学以上,college
+detail_female,女,female
+detail_high_school,高中,high school
+detail_job_no,未就业,not employed
+detail_job_yes,已就业,employed
+detail_male,男,male
+detail_marry_no,未婚,unmarried
+detail_marry_yes,已婚,married
+detail_middle_school,初中以下,middle school
+detail_no_order_info,暂无订单信息,no order information
+detail_pay_offline,线下还款,Offline repayment
+detail_pay_online,paystack线上,paystack-online
+detail_pay_withholding,paystack代扣,paystack-withholding
+detail_work_less,3年以下,Less than 3 years
+detail_work_middle,3-5年,3-5 years
+detail_work_more,5年以上,More than 5 years
+extra_cancle_logout,取消注销,Cancel logout
+extra_cancle_logout_confirm,您确定要取消注销吗？,Are you sure cancel logout?
+extra_first_name,名字,first name
+extra_logout,注销,logout
+extra_middle_name,中间名,middle name
+extra_remove_black_comfirm,您确定要将此人移除黑名单么？,Are you sure remove this person from the blacklist?
+extra_sur_name,姓,sur name
+operation_activity_detail,活动详情,activity detail
+operation_activity_id,活动ID,activity id
+operation_activity_name,活动名称,activity name
+operation_activity_time,活动时间,activity time
+operation_all_user,全部用户,all user
+operation_bank_account,线下还款银行账户,Offline repayment bank account
+operation_bank_name,线下还款银行名称,Offline repayment bank name
+operation_loan_address,借款协议地址,Loan protocol address
+operation_privacy_address,隐私协议地址,Privacy protocol address
+operation_banner,轮播图,banner
+operation_banner_title,轮播图标题,banner title
+operation_card_credit,卡认证成功,Card authentication succeeded
+operation_coupon_export_user,导出用户,export user
+operation_coupon_total_cost,总计成本,coupon total cost
+operation_coupon_new_rate,拉新率,coupon new rate
+operation_coupon_use_rate,使用率,coupon use rate
+operation_coupon_use_number,使用数量,coupon use number
+operation_coupon_number,发放数量,coupon number
+operation_coupon_amount,优惠券金额,coupon amount
+operation_coupon_time,优惠券有效期,coupon time
+operation_creater,创建人,creater
+operation_day,天,day
+operation_down_template,下载模板,download template
+operation_effective,有效,effective
+operation_email,电子邮箱,E-mail
+operation_img_big,图片大小最大不超过,The maximum picture size does not exceed
+operation_img_size,图片尺寸,img size
+operation_istribution_object,发放对象,istribution object
+operation_linkurl,跳转地址,link url
+operation_loan_success,放款成功,loan successfully
+operation_new_user,新用户,new users
+operation_notice_text,通知文案,notice text
+operation_offline,下线,offline
+operation_old_user,老用户,old users
+operation_online,上线,online
+operation_full_repayment,全额还款,Full payment
+operation_full_repayment_info,指活动有效期间全额还款结清的用户（包括提前还款，正常还款，逾期还款），用户结清订单时，优惠券自动发放到用户包里（活动期间一个客户仅发送一次优惠券）,指活动有效期间全额还款结清的用户（包括提前还款，正常还款，逾期还款），用户结清订单时，优惠券自动发放到用户包里（活动期间一个客户仅发送一次优惠券）
+operation_online_back,线上全额还款,Full payment online
+operation_particular_user,特定用户,particular users
+operation_phone,联系电话,phone
+operation_protocol_link,协议地址,protocol link
+operation_receiving,领取后,receiving
+operation_upload_file,选择上传文件,upload file
+operation_user_behavior,用户行为,user behavior
+operation_user_property,用户属性,user property
+operation_valid_bumber,请输入数字,ple input digitals
+operation_valid_upfile,支持excel导入，最多可导入1000个号码,"Support excel import, up to 1000 numbers can be imported"
+operation_use_instructions,使用说明,使用说明
+opeartion_use_instructions_info,所有的额度优惠券不能提现，均只有线上还款时才能使用，线下还款不能使用。提前还款/正常还款可用，逾期还款不可用。所有优惠券都是自动分发形式，并且一个客户只能发送一次,所有的额度优惠券不能提现，均只有线上还款时才能使用，线下还款不能使用。提前还款/正常还款可用，逾期还款不可用。所有优惠券都是自动分发形式，并且一个客户只能发送一次
+opeartion_new_user_info,指活动有效期内注册的用户,指活动有效期内注册的用户
+opeartion_old_user_info,活动期间成功结清次数>=1的用户（活动期间一个客户仅发送一次优惠券）,活动期间成功结清次数>=1的用户（活动期间一个客户仅发送一次优惠券）
+opeartion_successful_loan_info,指活动有效期内，客户放款成功，从待放款到贷款中状态,指活动有效期内，客户放款成功，从待放款到贷款中状态
+operation_online_back_info,指活动有效期内线上全额还款结清的用户（包括提前还款，正常还款，逾期还款），用户结清订单时，优惠券自动发放到用户包里,指活动有效期内线上全额还款结清的用户（包括提前还款，正常还款，逾期还款），用户结清订单时，优惠券自动发放到用户包里
+operation_card_credit_info,指活动期内的用户，完成银行卡认证（付款的验证），验证完成，优惠券自动发放到用户包里（每个用户可领取多张）,指活动期内的用户，完成银行卡认证（付款的验证），验证完成，优惠券自动发放到用户包里（每个用户可领取多张）
+order_abnormal_loan,放款异常,abnormal loan
+order_account,账户号,account
+order_add_black,添加黑名单,add blacklist
+order_add_black_list,加入黑名单,add to blacklist
+order_add_black_reason,加黑原因,black reason
+order_add_black_time,加黑时间,black time
+order_add_black_type,加黑方式,balack type
+order_add_collection,添加催收记录,add collection
+order_add_remark,添加备注,add remark
+order_all,全部,all
+order_allot_status,分配状态,Allocation status
+order_allot_status0,全部,all
+order_allot_status1,已分配,Assigned
+order_allot_status2,未分配,Unassigned
+order_allot_time,分配时间,Allocated time
+order_already_distribution,已分配,Assigned
+order_amount,金额,amount
+order_amount_set,金额配置,Amount allocation
+order_bank_email,银行邮箱,bank email
+order_batch_allot,批量分配,batch allot
+order_batch_distribution,批量分配,batch distribution
+order_button1,审核,Review
+order_button2,审核记录,Review record
+order_button3,添加催收信息,Add collection info
+order_button4,催收记录,collection info
+order_button5,减免,reduce aduit
+order_choose,选择被分配的人,Choose who is assigned
+order_choosed_reminder,被分配的人,Assigned person
+order_coll_abort,接通后挂断,Hang up after connecting
+order_coll_c_phone,公司电话,company phone
+order_coll_chang,承诺偿还,Promise to repay
+order_coll_changed,声称已偿还,Claimed to have been repaid
+order_coll_first,第一关系,First relationships
+order_coll_message,短信,message
+order_coll_no,无还款意向,No repayment intention
+order_coll_no_phone,电话未接通,Call not connected
+order_coll_other,其他,other
+order_coll_phone,电话,phone
+order_coll_second,第二关系,Second relationship
+order_coll_thirdparty,第三方,Third party
+order_coll_user,用户,user
+order_collect_result,催收结果,Collection result
+order_collect_result1,承诺还款,Promise to repay
+order_collect_result2,声称已经还款,Claim to have repaid
+order_collect_result3,第三方还款,Third party repayment
+order_collect_status,催收状态,Collection status
+order_collect_status1,已催收,Collected
+order_collect_status2,未催收,Uncollected
+order_collect_time,应提醒时间,Should remind time
+order_collect_time1,今天,today
+order_collect_time2,明天,tommorrow
+order_collect_time3,后天,day after tomorrow
+order_collected_phone,被催收人电话,Call of the Collected
+order_collecter_level,催收人等级,Collector level
+order_collection_assign_disabled,您批量选择的订单类型不一致，请重新选择,"The order types you selected in batch are inconsistent, please select again"
+order_collection_detail,催收详情,Collection details
+order_collection_person,催收人,Collector
+order_collection_record,催收记录,Collection records
+order_collection_target,催收对象,Collection object
+order_collection_time,催收时间,Collection time
+order_collection_way,催收方式,collection way
+order_configuration,配置,configuration
+order_contact,紧急联系人,emergency contact
+order_create_time,注册时间,create time
+order_credit_detail,审核详情,credit detail
+order_credit_person,审核人,credit person
+order_credit_record,信审记录,credit record
+order_credit_result,审核结果,credit result
+order_credit_time,审核时间,credit time
+order_cycle,贷款期限,Loan term
+order_data,数据,data
+order_deadline_rate_set,逾期率配置,deadline rate setting
+order_deadline_set,期限配置,deadline setting
+order_deadline_time,到期应还时间,deadline time
+order_did_not_return_amount,未还金额,not paid amount
+order_did_return_amount,已还金额,paid amount
+order_distribute,分配,distribute
+order_distribution_time,分配时间,distribution time
+order_download_black_template,下载上传模板,download black template
+order_examine,审核,Review
+order_examine_detail,审核详情,Review details
+order_examine_reason,拒绝原因,refund reason
+order_examine_status,审核状态,Approval Status
+order_expiration_time,到期时间,expiration time
+order_fail,失败,Failed
+order_failed_to_create_tripartite_loan_slip,三方放款单创建失败,Failed to create tripartite loan slip
+order_import,导入,import
+order_interest_rate,息率,interest rate
+order_invalid_order,订单失效,invalid order
+order_limit,贷款额度,loan amount
+order_loan_failed,放款失败,loan failed
+order_loan_rejection,放款拒绝,loan rejection
+order_logout_confirm,您确定要将此人账号注销吗,Are you sure log out this person's account
+order_machine_audit_exception,机审异常（资料不全或调用三方异常）,machine review abnormal
+order_machine_review_passed,机审通过,machine review passed
+order_machine_review_rejected,机审驳回,machine review rejected
+order_manual_review_fails_30_apply,人工复审不通过30天后再申请,manual review rejected && after 30 days
+order_manual_review_fails_apply,人工复审不通过可立即申请,manual review rejected && allowed apply
+order_manual_review_passed,人工复审通过,manual review passed
+order_mobile,联系电话,phnone
+order_new_or_old,新老用户,new or old users
+order_new_or_old_status0,默认,default
+order_new_or_old_status1,新用户,new users
+order_new_or_old_status2,老用户,new users
+order_new_user,新用户,old users
+order_not_distribution,未分配,not distribution
+order_offine,下线,offline
+order_old_new_user,新老用户,new users
+order_old_user,老用户,old users
+order_online,上线,online
+order_order_create_time,订单提交时间,order create time
+order_order_id,订单号,order id
+order_order_info,订单信息,order info
+order_order_status,订单状态,order status
+order_overdue_amount,逾期金额,overdue amount
+order_overdue_days,逾期天数,overdue days
+order_overdue_highest,逾期封顶,overdue highest
+order_overdue_level,逾期等级,overdue level
+order_overdue_money,逾期金额,overdue money
+order_overdue_rate,逾期费率,overdue rate
+order_pass,人工审核通过,Manually approved
+order_pay_money,交易金额,pay money
+order_pay_way,付款方式,pay way
+order_paystack,PayStack,PayStack
+order_pending,待放款,pending
+order_pending_card,待绑卡,pending card
+order_pending_manual_review,待人工复审,pending manual review
+order_phone_number,手机号,phone
+order_picture_show,照片展示,photo show
+order_prompt,提示,prompt
+order_rate_set,日息率配置,rate(day) setting
+order_refund_amount,退款金额,refund amount
+order_refund_no,退款编号,refund number
+order_refund_time,退款时间,refund time
+order_refuse,人工审核拒绝-立即重新申请,refuse-Reapply now
+order_refuse30,人工审核拒绝-30天后可申请,refuse-Can apply after 30 days
+order_remind_status,提醒状态,remind status
+order_remind_status1,已提醒,reminded
+order_remind_status2,未提醒,Not reminded
+order_reminder,提醒人,reminder
+order_remission,减免,reduce
+order_remission_aduit_operator,减免审核人,reduce audit operator
+order_remission_aduit_status,减免审核状态,reduce audit status
+order_remission_aduit_status1,待审核,Pending
+order_remission_aduit_status2,通过,approve
+order_remission_aduit_status3,不通过,not approve
+order_remission_amount,减免金额,reduce amount
+order_remission_apply_operator,减免申请人,reduce apply operator
+order_remission_apply_time,减免申请时间,reduce apply time
+order_remission_reason,减免理由,reduce reason
+order_remove,移除,remove
+order_repaid,已还款,repaid
+order_repay_time,应还时间,repay time
+order_repayment_time,还款时间,repayment time
+order_repeat,重复,repeat
+order_reset_password_confirm,"单击确定按钮进行重置后,客户登陆密码将重置为1234",Customer login password will be reset to 1234
+order_serial_number,流水号,serial number
+order_service_charge,服务费,service charge
+order_service_charge_set,服务费配置,service charge settings
+order_set_status,配置状态,setting status
+order_settlement_times,成功结清次数,settlement times
+order_should_repayment_amonut,到期应还金额,should repayment amonut
+order_should_repayment_time,应还款时间,should repayment time
+order_success,成功,success
+order_successful_loan,放款成功,loan successfully
+order_three_party_order_request_succeeded,三方订单请求成功,Three party order request succeeded
+order_three_party_order_successfully_created,放款中,Loaning
+order_trading_time,交易时间,trading time
+order_upload_operator,上传人,upload operator
+order_upload_time,上传时间,upload time
+order_user_type0,全部,all
+order_user_type1,新用户,new users
+order_user_type2,老用户,old users
+payment_abnormal_writeoff_status-1,全部,All
+payment_abnormal_writeoff_status62,未结清,Outstanding
+payment_abnormal_writeoff_status80,已结清,Cleared
+payment_associated_order,关联订单,associated order
+payment_associated_states,关联状态,states
+payment_associated_states-1,全部,all
+payment_associated_states1,未销账,Not written off
+payment_associated_states2,已销账,written off
+payment_associated_states5,无效,invalid
+payment_balance_below,您的系统账户余额不足，放款失败，请联系客服及时充值,"Your system account balance is insufficient and the loan failed, please contact customer service to recharge in time"
+payment_bank_email,银行邮箱,bank email
+payment_bank_flow_record_status2,销账,Written off
+payment_bank_flow_record_status3,撤销,Revoke
+payment_bank_flow_record_status4,退款,Refund
+payment_bank_flow_record_status5,异常处理,Exception handling
+payment_bank_flow_record_status6,取消,cancel
+payment_bank_flow_status1,未销账,Not written off
+payment_bank_flow_status2,已销账,written off
+payment_bank_flow_status3,未销账,Not written off
+payment_bank_flow_status5,无效,invalid
+payment_bank_flow_status6,未销账,Not written off
+payment_batch_lending,批量放款,batch lending
+payment_batch_reject,批量拒绝,batch reject
+payment_effective_time,生效时间,effective time
+payment_exception_handling,异常处理,exception handling
+payment_last_update_time,最近更新时间,last update time
+payment_lending,放款,lending
+payment_lending_time,放款时间,lending time
+payment_limit,贷款额度,Loan amount
+payment_overdue_fee,逾期费,Overdue Fee
+payment_paystack_balance,PayStack余额（GHS）,PayStack balance
+payment_paystack_num,Paystack订单号,Paystack order number
+payment_re_lending,再次放款,Pending again
+payment_record,记录,record
+payment_reject,拒绝,reject
+payment_repayment_amount,还款金额,repayment amount
+payment_returnAmount,应退金额,return Amount
+payment_revocation,撤销,revocation
+payment_trading_num,交易编号,Transaction number
+payment_un_loan_order_amunt,待放款金额（GHS）,Pending loan amount
+payment_un_loan_order_num,待放款订单（单）,Pending loan order
+payment_upload_tip1,您上传了,You uploaded
+payment_upload_tip2,条数据，成功了,"pieces of data,"
+payment_upload_tip3,条，失败了,"pieces were successful,"
+payment_upload_tip4,条，重复了,"pieces failed, and"
+payment_upload_tip5,条。,pieces were repeated.
+payment_user_type,用户类型,user type
+payment_writeoff,销账,write-off
+report_bankInfoAuthNum,银行卡信息认证数,银行卡信息认证数
+report_bankInfoAuthRate,银行卡信息认证率,银行卡信息认证率
+report_bankInfoInputNum,银行卡信息填写数,银行卡信息填写数
+report_bankInfoInputRate,银行卡信息填写率,银行卡信息填写率
+report_baseInfoAuthNum,基本信息认证数,基本信息认证数
+report_baseInfo,基本信息,基本信息
+report_baseInfoAuthRate,基本信息认证率,基本信息认证率
+report_date,时间,时间
+report_download,导出,导出
+report_expireAmount,到期本金,到期本金
+report_expireNums,到期单数,到期单数
+report_expireRepayAmount,已还金额,已还金额
+report_expireTotalAmount,到期总金额,到期总金额
+report_firstExpire,首逾单数,首逾单数
+report_firstExpireRate,首逾率,首逾率
+report_loanNums,放款单数,放款单数
+report_moreInfoAuthNum,更多信息认证数,更多信息认证数
+report_moreInfoAuthRate,更多信息认证率,更多信息认证率
+report_not_certification,未认证,未认证
+report_already_certification,已认证,已认证
+report_newExpire,新客到期单数,新客到期单数
+report_newFirstExpire,新客首逾单数,新客首逾单数
+report_newFirstExpireRate,新客首逾率,新客首逾率
+report_newNums,新客放款单数,新客放款单数
+report_newRefundAmount,新客到期金额,新客到期金额
+report_newStillExpire,新客仍逾单数,新客仍逾单数
+report_newStillExpireRate,新客仍逾率,新客仍逾率
+report_newTotalAmount,新客放款金额,新客放款金额
+report_oldExpire,老客到期单数,老客到期单数
+report_oldFirstExpire,老客首逾单数,老客首逾单数
+report_oldFirstExpireRate,老客首逾率,老客首逾率
+report_oldNums,老客放款单数,老客放款单数
+report_oldRefundAmount,老客到期金额,老客到期金额
+report_oldStillExpire,老客仍逾单数,老客仍逾单数
+report_oldStillExpireRate,老客仍逾率,老客仍逾率
+report_oldTotalAmount,老客放款金额,老客放款金额
+report_orderInNumber,进件人数,进件人数
+report_orderInRate,进件率,进件率
+report_orderInpayOkRate,进件下款率,进件下款率
+report_payOkNumber,放款成功人数,放款成功人数
+report_payOkRate,下款率,下款率
+report_paymentNums,结清订单数,结清订单数
+report_personInfoAuthNum,个人信息认证数,个人信息认证数
+report_personInfoAuthRate,个人信息认证率,个人信息认证率
+report_regDate,注册日期,注册日期
+report_registNum,注册人数,注册人数
+report_repayAmount,回款金额,回款金额
+report_stillExpire,仍逾单数,仍逾单数
+report_stillExpireRate,仍逾率,仍逾率
+report_totalAmount,放款金额,放款金额
+router_abnormalWriteoff,异常销账,Abnormal write-off
+router_actionData,行为数据,行为数据
+router_actionDataCollection,催收数据,催收数据
+router_activity,活动管理,activity management
+router_allData,整体数据,整体数据
+router_bankFlow,银行流水,bank statements
+router_banner,前端图片管理,picture management
+router_collectionAllList,催收总订单,collection order
+router_collectionManage,催收管理,collection management
+router_collectionReduceList,催收减免,reduce audit
+router_contactUs,联系我们,contact us
+router_credit,信审管理,credit management
+router_creditData,信审数据,credit data
+router_creditOrderAll,信审总订单,credit order
+router_creditOrderMy,我的信审订单,my credit order
+router_detail,详情,detail
+router_home,首页,home
+router_login,登录,login
+router_manualPayment,手动放款,Manual lending
+router_merchantAccount,账号创建,account management
+router_merchantRole,角色权限,role Permission
+router_merchantSystem,系统管理,system management
+router_myCollectionAllList,我的催收订单,my collection order
+router_myS0AllList,我的S0订单,my S0 order
+router_offlineWriteoff,线下销账,Offline write-off
+router_operation,运营管理,Operation Management
+router_order,订单管理,order management
+router_orderAll,总订单,total order
+router_paymentAbnormal,放款异常,Abnormal loan
+router_paymentManage,支付管理,payment management
+router_productSet,产品配置,Product configuration
+router_s0AllList,S0总订单,S0 order
+router_statisticionManage,报表,报表
+router_user,用户管理,user management
+router_userBlackList,黑名单,black list
+router_userList,注册用户信息,Registered user info
+router_welcome,欢迎页,welcome
+router_pushMessage,消息推送,消息推送
+router_userAuthInfo,用户认证信息,certification list
+statistic_back_amount,催回订单金额,催回订单金额
+statistic_back_amount_reality,订单催回金额（实际）,订单催回金额（实际）
+statistic_back_num,催回订单数,催回订单数
+statistic_back_num_reality,订单催回数（实际）,订单催回数（实际）
+statistic_back_rate,订单催回率,订单催回率
+statistic_collect_data,催收数据,催收数据
+statistic_credit_basic,基础数据,基础数据
+statistic_credit_evaluation,考核数据,考核数据
+statistic_credit_num,审核总单数,审核总单数
+statistic_credit_person,信审人,信审人
+statistic_day_dispatch_amount,当日分配订单金额,当日分配订单金额
+statistic_day_dispatch_num,当日分配订单数,当日分配订单数
+statistic_dispatch_amount,分配订单金额,分配订单金额
+statistic_dispatch_amount_total,分配订单总额,分配订单总额
+statistic_dispatch_back_amount,分配中累计催回订单金额,分配中累计催回订单金额
+statistic_dispatch_back_amount_day,分配中累计催回订单金额（当日分配中）,分配中累计催回订单金额（当日分配中）
+statistic_dispatch_back_amount_total,分配中催回订单金额,分配中催回订单金额
+statistic_dispatch_back_num,分配中累计催回订单数,分配中累计催回订单数
+statistic_dispatch_back_num_day,分配中累计催回订单数（当日分配中）,分配中累计催回订单数（当日分配中）
+statistic_dispatch_back_num_total,分配中催回订单数,分配中催回订单数
+statistic_dispatch_num,分配订单数,分配订单数
+statistic_dispatch_num_total,分配订单总数,分配订单总数
+statistic_expire_all__num,到期总单数,到期总单数
+statistic_expire_num,到期单数,到期单数
+statistic_first_overdue_all_num,首逾总单数,首逾总单数
+statistic_first_overdue_all_rate,总首逾率,总首逾率
+statistic_first_overdue_num,首逾单数,首逾单数
+statistic_first_overdue_rate,首逾率,首逾率
+statistic_month,年月,年月
+statistic_order_amount_total,催回订单总额,催回订单总额
+statistic_order_num_total,催回订单总数,催回订单总数
+statistic_pass_num,通过总单数,通过总单数
+statistic_pass_rate,总通过率,总通过率
+statistic_pay_all_num,放款成功总单数,放款成功总单数
+statistic_pay_num,放款成功单数,放款成功单数
+statistic_s0_back_num,S0催回订单数,S0催回订单数
+statistic_s0_back_num_total,S0催回订单总数,S0催回订单总数
+statistic_s0_data,S0数据,S0数据
+statistic_s0_dispatch_num,S0分配订单数,S0分配订单数
+statistic_s0_dispatch_num_total,S0分配订单总数,S0分配订单总数
+statistic_s0_dispatch_rate,S0催回率,S0催回率
+statistic_s0_dispatch_rate_total,S0总催回率,S0总催回率
+statistic_s0_first_delay_num,首逾单数,首逾单数
+statistic_s0_first_delay_rate,总首逾率,总首逾率
+statistic_s0_order_num,S0到期订单数,S0到期订单数
+statistic_second_overdue_all_num,仍逾期总单数,仍逾期总单数
+statistic_second_overdue_all_rate,总仍逾期率,总仍逾期率
+statistic_second_overdue_num,仍逾期单数,仍逾期单数
+statistic_second_overdue_rate,仍逾期率,仍逾期率
+statistic_wait_back_num,待催订单数,待催订单数
+system_app_id,APP ID,APP ID
+system_app_name_rule,18位字符以内数字或英文字母的组合,A combination of numbers or English letters within 18 characters
+system_app_package,APP包名称,package name
+system_appid_rule,必须为3位字母+2位数字,3letters+2digitals
+system_authsetting,权限设置,Permission settings
+system_balance,账户余额（￥）,balance
+system_domain,域名,domain
+system_information,用户详细信息,detail info
+system_is_reset_pass,点击之后，该账号的密码将会被重置，重置密码为：123456 是否继续？,the account password is reset to 123456. Continue?
+system_jobno,职位编号,job number
+system_lay_up,暂停使用,not in use
+system_loan_income,每放款成功一笔订单固定收取费用（元）,A fee will be charged for each successful order
+system_login_name,登录名,login name
+system_login_name_rule,6-16位数字或英文字母的组合,6-16 digits or English letters
+system_merchant_name,商家名称,merchant name
+system_normal_use,正常使用,Normal use
+system_permission,权限,authority
+system_phone_error,手机号码格式错误,Wrong format of phone
+system_please_input,请输入,ple input
+system_please_rolename,请输入角色名称,ple input role name
+system_please_select,请选择,ple select
+system_price_standard,计价标准,Pricing Standard
+system_price_standard_rule,只能输入7位数字（最多保留两位小数）,Only 7 digits can be entered(Two decimal places)
+system_recent_time,最近登录时间,recent time
+system_repayment,还款记录,repapyment
+system_role,角色,role name
+system_rolename,角色名称,role name
+system_stage,等级,stage
+tips_add_search_data,请输入搜索条件,请输入搜索条件
+tips_can_not_delete_been_writeoff,已销账的订单不能删除，请撤销销账后重新尝试。,"cannot be deleted, please cancel the cancellation and try again."
+tips_comfirm_bank_flow_no,请填写流水号,Ple fill in the serial number
+tips_comfirm_batch_lending,您确定要支付所有待处理的付款单么？,Are you sure pay all pending payment orders?
+tips_comfirm_batch_reject,您确定要拒绝所有待处理的付款单么？,Are you reject all pending payment orders?
+tips_comfirm_cancal_invalid,您确定要取消异常处理操作吗？,Are you sure cancel the exception handling operation?
+tips_comfirm_choose,请先选择订单！,Please select an order first!
+tips_comfirm_delete,确认删除以上选择信息？,Are you sure to delete the above selection information?
+tips_comfirm_invalid,您确定要将该笔流水状态改为无效状态吗？,Are you sure change the status of this transaction to invalid?
+tips_comfirm_lending,您确定要支付此付款单么？,Are you sure pay this payment slip?
+tips_comfirm_lending_fail,我已确认贷款失败,I have confirmed that the loan failed
+tips_comfirm_reject,您确定要拒绝此付款单么？,Are you sure reject this payment order?
+tips_comfirm_relending,是否要给客户再次放款？,Do you want to lend the customer again?
+tips_comfirm_revocation_writeoff,您确定要撤销销账过的记录吗？,Are you sure cancel the record of the cancellation?
+tips_data_up_to_yesterday,此页数据截止到昨日,此页数据截止到昨日
+user_address_book,通讯录,Adress book
+user_age,年龄,Age
+user_bank,银行名称,Bank name
+user_card_number,银行卡号,card number
+user_bank_no,银行账户号,Bccount number
+user_birthday,生日,Birthday
+user_bvn,BVN,Bvn
+user_bvn_phone_num,Bvn绑定手机号,Bvn phone
+user_campany_name,公司名称,Company
+user_campany_phone,公司电话,Phone
+user_campany_state,公司所在省/市,State
+user_company_info,公司信息,Info
+user_contact,紧急联系人,Contact
+user_email,电子邮件,E-mail
+user_family_member1,家庭成员1,Member1
+user_family_member2,家庭成员2,Member2
+user_family_member_phone_num1,家庭成员联系方式1,Phone1
+user_family_member_phone_num2,家庭成员联系方式2,Phone1
+user_first_photo,首次成功贷款照片,First photo
+user_gender,性别,Gender
+user_hidden,隐藏,Hidden
+user_more_carrer,职业名称,Carrer
+user_more_child,子女数量,Chilren info
+user_more_facebook,Facebook,Facebook
+user_more_income,月收入,Income
+user_more_info,更多信息,More info
+user_more_job,就业情况,Job info
+user_more_marry,婚姻状况,Marry info
+user_more_tran,教育水平,Education info
+user_more_twitter,Twitter,Twitter
+user_more_whatsapp,Whatsapp,Whatsapp
+user_more_work,工作经验,Experience
+user_name,姓名,Name
+user_personal_info,个人信息,Personal info
+user_phone_number,电话号码,Phone
+user_photo_info,照片展示,Photo info
+user_state,居住所在省/市,State
+user_thistime_photo,这次贷款照片,Now photo
+user_update_time,更新时间,Update time
+user_symbol,Voter ID,Voter ID
+user_symbol_phone,Voter ID Phone,Voter ID Phone
+user_bank_info,银行信息,Bank info
+post_title,推送标题,推送标题
+post_time,推送时间,推送时间
+post_status,推送状态,推送状态
+post_content,推送内容,推送内容
+post_user_number,推送用户数,推送用户数
+post_read_number,阅读用户数,阅读用户数
+post_target,推送对象,推送对象
+post_type,推送方式,推送方式
+post_status_pushed,已推送,已推送
+post_status_not_pushed,未推送,未推送
+post_upload_reset_users,重新上传,重新上传
+post_upload_users,上传用户,上传用户
+post_type_now,立即推送,立即推送
+post_type_fixed time,定时推送,定时推送
