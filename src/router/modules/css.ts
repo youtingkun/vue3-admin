@@ -1,6 +1,9 @@
+const cssValue = () => import('@/views/css/css-val/index.vue')
+
 const cssRoutes = {
   path: '/css-val',
-  component: () => import('@/views/css/css-val/index.vue'),
+  name: 'cssVal',
+  component: cssValue,
   meta: {
     title: 'css-val'
   }
