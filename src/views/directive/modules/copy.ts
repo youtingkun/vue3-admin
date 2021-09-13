@@ -2,7 +2,7 @@
  * @Date: 2021-06-07 10:21:50
  */
 const copy = {
-  beforeMount(el, binding) {
+  beforeMount(el: any, binding: any) {
     el.targetContent = binding.value
     el.addEventListener('click', () => {
       if (!el.targetContent) return console.warn('没有需要复制的目标内容')
@@ -25,7 +25,7 @@ const copy = {
       document.body.removeChild(textarea)
     })
   },
-  updated(el, binding) {
+  updated(el: any, binding: any) {
     // 实时更新最新的目标内容
     el.targetContent = binding.value
   }

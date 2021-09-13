@@ -6,7 +6,7 @@
     <button @click="add">增加</button>
     <div>{{ doubleCount }}</div>
     <el-button>123</el-button>
-    <div><TestButton @clickOne="outClick"></TestButton></div>
+    <div><TestButton @clickOne="outClick" /></div>
   </div>
 </template>
 

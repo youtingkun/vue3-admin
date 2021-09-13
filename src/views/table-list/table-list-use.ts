@@ -1,7 +1,7 @@
 import { reactive } from 'vue'
 
 // 接口和搜索参数不同，需要单独传
-function useTableList(apiFunction, searchForm) {
+function useTableList(apiFunction: any, searchForm: any) {
   const table = reactive({
     listLoading: false,
     tableList: <any>[],

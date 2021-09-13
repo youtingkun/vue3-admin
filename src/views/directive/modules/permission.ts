@@ -8,7 +8,5 @@ const permission = {
       el.parentNode && el.parentNode.removeChild(el) // 关键代码, 没有权限则删除元素
     }
   },
-  updated(el, binding) {
-    toolPermission(el, binding.value)
-  }
+  updated(el, binding) {}
 }

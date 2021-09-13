@@ -1,22 +1,32 @@
-import { createStore, useStore as baseUseStore } from 'vuex'
-import count from './modules/count'
-import app from './modules/app'
-import settings from './modules/settings'
-import tagsView from './modules/tagsView'
-import permission from './modules/permission'
-// Create a new store instance.
-export default createStore({
-  state: {
-    text: 'This is Vuex Root.state.text'
-  },
-  getters: {},
-  mutations: {},
-  actions: {},
+import { createStore } from 'vuex'
+import { AppState, AppStore, store as app } from '@/store/modules/app'
+import { SettingsState, SettingStore, store as settings } from '@/store/modules/settings'
+import { PermissionState, PermissionStore, store as permission } from '@/store/modules/permission'
+import { store as user, UserState, UserStore } from '@/store/modules/user'
+import { store as tagViews, TagsStore, TagsViewState } from '@/store/modules/tagsview'
+
+export interface RootState {
+  app: AppState
+  settings: SettingsState
+  permission: PermissionState
+  user: UserState
+  tagViews: TagsViewState
+}
+
+export type Store = AppStore<Pick<RootState, 'app'>> & SettingStore<Pick<RootState, 'settings'>>
+  & PermissionStore<Pick<RootState, 'permission'>> & UserStore<Pick<RootState, 'user'>>
+  & TagsStore<Pick<RootState, 'tagViews'>>
+
+export const store = createStore({
   modules: {
-    count,
     app,
     settings,
-    tagsView,
-    permission
+    permission,
+    user,
+    tagViews
   }
 })
+
+export function useStore(): Store {
+  return store as Store
+}

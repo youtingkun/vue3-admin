@@ -6,7 +6,7 @@ function useDialog(): any {
     dialogBtnLoading: false,
     title: '123' // 新增或编辑
   })
-  const openDialog = (data) => {
+  const openDialog = (data: any) => {
     dialogData.dialogVisible = true
     data ? (dialogData.title = '编辑') : (dialogData.title = '新增')
   }

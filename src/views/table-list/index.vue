@@ -2,7 +2,7 @@
   <div>
     <el-form class="mb10" inline label-suffix="：">
       <el-form-item label="phone">
-        <el-input v-model.trim="searchForm.phone" clearable></el-input>
+        <el-input v-model.trim="searchForm.phone" clearable />
       </el-form-item>
       <el-form-item label="time">
         <el-date-picker
@@ -11,21 +11,20 @@
           range-separator="-"
           value-format="yyyy-MM-dd HH:mm:ss"
           :default-time="['00:00:00', '23:59:59']"
-        >
-        </el-date-picker>
+        />
       </el-form-item>
-      <el-button type="search" @click="mySearch">搜索</el-button>
-      <el-button @click="handleReset">重置</el-button>
+      <el-button type="search" @click="mySearch"> 搜索 </el-button>
+      <el-button @click="handleReset"> 重置 </el-button>
     </el-form>
-    <el-button @click="parentOpenDialogAdd">添加</el-button>
-    <el-button @click="parentOpenDialogEdit({ phone: 123 })">编辑</el-button>
+    <el-button @click="parentOpenDialogAdd"> 添加 </el-button>
+    <el-button @click="parentOpenDialogEdit({ phone: 123 })"> 编辑 </el-button>
     <el-table
       :data="table.tableList"
       border
       header-row-class-name="table-header"
       v-loading="table.listLoading"
     >
-      <el-table-column label="phone" prop="phone"></el-table-column>
+      <el-table-column label="phone" prop="phone" />
     </el-table>
     <el-pagination
       v-if="table.tableList.length > 0"
@@ -33,8 +32,8 @@
       :page="table.page.current"
       :limit="table.page.size"
       @pagination="getTableList"
-    ></el-pagination>
-    <testDialog ref="RefChilde"></testDialog>
+    />
+    <testDialog ref="RefChilde" />
   </div>
 </template>
 
@@ -63,7 +62,7 @@ export default {
     const parentOpenDialogAdd = function () {
       RefChilde.value.childrenOpenDialog()
     }
-    const parentOpenDialogEdit = (data) => {
+    const parentOpenDialogEdit = (data: any) => {
       RefChilde.value.childrenOpenDialog(data)
     }
     return {
