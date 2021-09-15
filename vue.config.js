@@ -16,22 +16,22 @@ module.exports = {
     publicPath: '/',
     hot: true,
     port: '8080',
-    open: true,
+    open: false, // 是否自动打开页面
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      '/': {
+        target: 'http://yapi.youtingkun.com/mock/13', //mock地址
+        ws: true,
+        pathRewrite: {
+          // '^/api/': ''
+        },
+        changeOrigin: true,
+        secure: false
+      }
     }
-    // proxy: {
-    //   '/api/': {
-    //     target: 'http://xxxxxx/api/',
-    //     ws: true,
-    //     pathRewrite: {
-    //       '^/api/': ''
-    //     },
-    //     changeOrigin: true,
-    //     secure: false
-    //   }
-    // }
   },
   pluginOptions: {
     'style-resources-loader': {

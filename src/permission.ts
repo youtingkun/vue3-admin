@@ -40,6 +40,7 @@ router.beforeEach(async (to: RouteLocationNormalized, _: RouteLocationNormalized
           }
           // 动态地添加可访问的 routes
           store.state.permission.dynamicRoutes.forEach((route) => {
+            console.log('添加的路由', route)
             router.addRoute(route)
           })
           // 确保添加路由已完成

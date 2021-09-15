@@ -31,16 +31,16 @@ export const actions: ActionTree<UserState, RootState> & Actions = {
   async [UserActionTypes.ACTION_LOGIN]({ commit }: AugmentedActionContext, userInfo: any) {
     let { username, password } = userInfo
     username = username.trim()
-    setToken('res.data.accessToken')
-    commit(UserMutationTypes.SET_TOKEN, 'res.data.accessToken')
-    // await accountLogin({ username, password }).then(async(res: any) => {
-    //   if (res?.code === 0 && res.data.accessToken) {
-    //     setToken(res.data.accessToken)
-    //     commit(UserMutationTypes.SET_TOKEN, res.data.accessToken)
-    //   }
-    // }).catch((err: any) => {
-    //   console.warn(err)
-    // })
+    // setToken('res.data.accessToken')
+    // commit(UserMutationTypes.SET_TOKEN, 'res.data.accessToken')
+    await accountLogin({ username, password })
+      .then((res: any) => {
+        setToken(res.data.accessToken)
+        commit(UserMutationTypes.SET_TOKEN, res.data.accessToken)
+      })
+      .catch((err: any) => {
+        console.warn(err)
+      })
   },
 
   [UserActionTypes.ACTION_RESET_TOKEN]({ commit }: AugmentedActionContext) {
@@ -53,34 +53,13 @@ export const actions: ActionTree<UserState, RootState> & Actions = {
     if (state.token === '') {
       throw Error('token is undefined!')
     }
-    const res = {
-      id: 0,
-      username: 'admin',
-      password: 'any',
-      name: 'Super Admin',
-      avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-      introduction: 'I am a super administrator',
-      email: 'admin@test.com',
-      phone: '1234567890',
-      roles: ['admin']
-    }
-    commit(UserMutationTypes.SET_ROLES, res.roles)
-    commit(UserMutationTypes.SET_NAME, res.name)
-    commit(UserMutationTypes.SET_AVATAR, res.avatar)
-    commit(UserMutationTypes.SET_INTRODUCTION, res.introduction)
-    commit(UserMutationTypes.SET_EMAIL, res.email)
-    // await userInfoRequest().then((res: any) => {
-    //   if (res?.code === 0) {
-    //     commit(UserMutationTypes.SET_ROLES, res.data.roles)
-    //     commit(UserMutationTypes.SET_NAME, res.data.name)
-    //     commit(UserMutationTypes.SET_AVATAR, res.data.avatar)
-    //     commit(UserMutationTypes.SET_INTRODUCTION, res.data.introduction)
-    //     commit(UserMutationTypes.SET_EMAIL, res.data.email)
-    //     return res
-    //   } else {
-    //     throw Error('Verification failed, please Login again.')
-    //   }
-    // })
+    await userInfoRequest().then((res: any) => {
+      commit(UserMutationTypes.SET_ROLES, res.data.roles)
+      commit(UserMutationTypes.SET_NAME, res.data.name)
+      commit(UserMutationTypes.SET_AVATAR, res.data.avatar)
+      commit(UserMutationTypes.SET_INTRODUCTION, res.data.introduction)
+      commit(UserMutationTypes.SET_EMAIL, res.data.email)
+    })
   },
 
   async [UserActionTypes.ACTION_CHANGE_ROLES]({ commit }: AugmentedActionContext, role: string) {
