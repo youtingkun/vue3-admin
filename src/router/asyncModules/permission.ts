@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router'
-import { Layout } from '@/constant/router'
+const Layout = () => import('@/layout/index.vue')
 
 const permissionRouter: Array<RouteRecordRaw> = [
   {
@@ -16,7 +16,8 @@ const permissionRouter: Array<RouteRecordRaw> = [
     children: [
       {
         path: 'page',
-        component: () => import(/* webpackChunkName: "permission-page" */ '@/views/permission/page.vue'),
+        component: () =>
+          import(/* webpackChunkName: "permission-page" */ '@/views/permission/page.vue'),
         name: 'PagePermission',
         meta: {
           title: '页面权限',
@@ -25,7 +26,8 @@ const permissionRouter: Array<RouteRecordRaw> = [
       },
       {
         path: 'directive',
-        component: () => import(/* webpackChunkName: "permission-directive" */ '@/views/permission/directive.vue'),
+        component: () =>
+          import(/* webpackChunkName: "permission-directive" */ '@/views/permission/directive.vue'),
         name: 'DirectivePermission',
         meta: {
           title: '指令权限' // 如果未设置角色，则表示：该页面不需要权限，但会继承根路由的角色

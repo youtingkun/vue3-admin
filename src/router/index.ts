@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import { Layout } from '@/constant/router'
+import nested from './const-modules/nested'
+const Layout = () => import('@/layout/index.vue')
 const compositionApi = () => import('@/views/composition-api/index.vue')
 const tableList = () => import('@/views/table-list/index.vue')
 const directive = () => import('@/views/directive/index.vue')
@@ -79,7 +80,7 @@ export const constantRoutes: Array<RouteRecordRaw> = [
   }
 ]
 
-export const asyncRoutes: Array<RouteRecordRaw> = [...asyncModules]
+export const asyncRoutes: Array<RouteRecordRaw> = [...asyncModules, nested]
 const router = createRouter({
   history: createWebHashHistory(),
   routes: constantRoutes

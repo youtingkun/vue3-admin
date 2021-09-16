@@ -3,11 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: [
-    'plugin:vue/vue3-strongly-recommended',
-    '@vue/standard',
-    '@vue/typescript/recommended'
-  ],
+  extends: ['plugin:vue/vue3-strongly-recommended', '@vue/standard', '@vue/typescript/recommended'],
   parserOptions: {
     ecmaVersion: 2020
   },
@@ -54,6 +50,7 @@ module.exports = {
       }
     ],
     'vue/attribute-hyphenation': 'off',
-    'vue/custom-event-name-casing': 'off'
+    'vue/custom-event-name-casing': 'off',
+    '@typescript-eslint/no-unused-vars': 'off'
   }
 }
