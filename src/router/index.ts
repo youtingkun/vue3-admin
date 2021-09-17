@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import nested from './const-modules/nested'
+import nested from './modules/nested'
 const Layout = () => import('@/layout/index.vue')
 const compositionApi = () => import('@/views/composition-api/index.vue')
 const tableList = () => import('@/views/table-list/index.vue')

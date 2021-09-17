@@ -28,6 +28,7 @@ const hasPermission = (roles: string[], route: RouteRecordRaw) => {
   }
 }
 
+// 根据角色筛选出有权限的路由
 export const filterAsyncRoutes = (routes: RouteRecordRaw[], roles: string[]) => {
   const res: RouteRecordRaw[] = []
   routes.forEach((route) => {
@@ -51,12 +52,7 @@ export interface Actions {
 
 export const actions: ActionTree<PermissionState, RootState> & Actions = {
   [PermissionActionType.ACTION_SET_ROUTES]({ commit }: AugmentedActionContext, roles: string[]) {
-    let accessedRoutes
-    if (roles.includes('admin')) {
-      accessedRoutes = asyncRoutes
-    } else {
-      accessedRoutes = filterAsyncRoutes(asyncRoutes, roles)
-    }
+    const accessedRoutes = filterAsyncRoutes(asyncRoutes, roles)
     commit(PermissionMutationType.SET_ROUTES, accessedRoutes)
   }
 }

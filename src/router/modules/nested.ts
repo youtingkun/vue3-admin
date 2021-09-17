@@ -7,7 +7,7 @@ const nested: RouteRecordRaw = {
   redirect: '/nested/menu1',
   name: 'Nested',
   meta: {
-    title: '多层菜单',
+    title: '多层权限菜单',
     icon: 'link'
   },
   children: [
@@ -21,13 +21,17 @@ const nested: RouteRecordRaw = {
           path: 'menu1-1',
           component: () => import('@/views/nested/menu1/menu1-1/index.vue'),
           name: 'Menu1-1',
-          meta: { title: 'Menu1-1', icon: 'el-icon-share' }
+          meta: {
+            title: 'Menu1-1',
+            icon: 'el-icon-share',
+            roles: ['1-1'] // 在yapi后台更改进行测试
+          }
         },
         {
           path: 'menu1-2',
           component: () => import('@/views/nested/menu1/menu1-2/index.vue'),
           name: 'Menu1-2',
-          meta: { title: 'Menu1-2', icon: 'el-icon-share' },
+          meta: { title: 'Menu1-2', icon: 'el-icon-share', roles: ['1-2'] },
           children: [
             {
               path: 'menu1-2-1',
