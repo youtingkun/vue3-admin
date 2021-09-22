@@ -9,26 +9,32 @@
     />
     <BreadCrumb id="breadcrumb-container" class="breadcrumb-container" />
     <div class="right-menu">
+      <el-dropdown class="language-container hover-effect right-menu-item" trigger="click">
+        <div class="language-wrapper">
+          <span class="name">{{ $t('common_lang') }}</span>
+          <i class="el-icon-caret-bottom" />
+        </div>
+        <template #dropdown>
+          <el-dropdown-menu>
+            <el-dropdown-item
+              v-for="lang in state.langs"
+              @click="switchLanguage(lang.key)"
+              :key="lang.key"
+            >
+              <div class="language-item">
+                {{ lang.name }}
+              </div>
+            </el-dropdown-item>
+          </el-dropdown-menu>
+        </template>
+      </el-dropdown>
       <template v-if="device !== 'mobile'">
-        <Screenfull
-          class="right-menu-item hover-effect"
-          v-if="showScreenfull"
-        />
-        <ThemeSwitch
-          class="right-menu-item hover-effect"
-          v-if="showThemeSwitch"
-        />
+        <Screenfull class="right-menu-item hover-effect" v-if="showScreenfull" />
+        <ThemeSwitch class="right-menu-item hover-effect" v-if="showThemeSwitch" />
       </template>
-      <el-dropdown
-        class="avatar-container right-menu-item hover-effect"
-        trigger="click"
-      >
+      <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
-          <img
-            :src="require('@/assets/layout/avatar.gif')"
-            class="user-avatar"
-            alt=""
-          >
+          <img :src="require('@/assets/layout/avatar.gif')" class="user-avatar" alt="" />
         </div>
         <template #dropdown>
           <el-dropdown-menu>
@@ -61,6 +67,9 @@ import { useStore } from '@/store'
 import { AppActionTypes } from '@/store/modules/app/action-types'
 import { UserActionTypes } from '@/store/modules/user/action-types'
 import { useRouter } from 'vue-router'
+import i18n, { setLanguage, getLanguage } from '@/language/index'
+import { useI18n } from 'vue-i18n'
+import { ElMessageBox, ElMessage } from 'element-plus'
 export default defineComponent({
   name: 'NavigationBar',
   components: {
@@ -70,6 +79,7 @@ export default defineComponent({
     Screenfull
   },
   setup() {
+    const { t } = useI18n()
     const store = useStore()
     const router = useRouter()
     const sidebar = computed(() => {
@@ -84,7 +94,7 @@ export default defineComponent({
     const showScreenfull = computed(() => {
       return store.state.settings.showScreenfull
     })
-    const state = reactive({
+    const state: any = reactive({
       toggleSideBar: () => {
         store.dispatch(AppActionTypes.ACTION_TOGGLE_SIDEBAR, false)
       },
@@ -93,9 +103,27 @@ export default defineComponent({
         router.push('/login').catch((err) => {
           console.warn(err)
         })
-      }
+      },
+      langs: [
+        {
+          key: 'en_US',
+          name: 'English'
+        },
+        {
+          key: 'zh_CN',
+          name: '中文'
+        }
+      ]
     })
+    const switchLanguage = (lang: string) => {
+      setLanguage(lang)
+      ElMessageBox.alert(`${t('common_lang')}`, '', {
+        confirmButtonText: t('common_confirm')
+      })
+    }
     return {
+      state,
+      switchLanguage,
       sidebar,
       device,
       showThemeSwitch,
@@ -147,7 +175,6 @@ export default defineComponent({
       height: 100%;
       font-size: 18px;
       color: #5a5e66;
-      vertical-align: text-bottom;
 
       &.hover-effect {
         cursor: pointer;
@@ -156,6 +183,11 @@ export default defineComponent({
         &:hover {
           background: rgba(0, 0, 0, 0.025);
         }
+      }
+    }
+    .language-container {
+      .language-wrapper {
+        cursor: pointer;
       }
     }
 

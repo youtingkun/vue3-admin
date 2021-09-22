@@ -1,9 +1,7 @@
 <!-- editor 权限主页 -->
 
 <template>
-  <div class="app-container">
-    Editor
-  </div>
+  <div class="app-container">Editor{{ $t('common_add') }}</div>
 </template>
 
 <script lang="ts">
@@ -18,5 +16,4 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

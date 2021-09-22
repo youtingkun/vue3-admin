@@ -11,9 +11,39 @@ const messages = {
   }
 }
 
+interface langType {
+  a: string | undefined
+}
+
+interface Name {
+  name: string
+}
+
+export function getLanguage() {
+  let lang: string | undefined = 'en_US' // 默认为英文
+  const localLang = localStorage.getItem('lang')
+  if (localLang) {
+    lang = localLang
+  } else {
+    const language = navigator.language
+    const locales = Object.keys(messages)
+    for (const locale of locales) {
+      if (language.indexOf(locale) > -1) {
+        lang = locale
+      }
+    }
+  }
+  return lang
+}
+
 const i18n = createI18n({
-  locale: 'zh_CN', // set locale
+  locale: getLanguage(), // set locale
   messages // set locale messages
 })
+
+export function setLanguage(lang: string) {
+  localStorage.setItem('lang', lang)
+  i18n.global.locale = lang
+}
 
 export default i18n

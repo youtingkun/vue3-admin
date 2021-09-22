@@ -1,0 +1,71 @@
+﻿key,zh-cn,en
+common_lang,中文,English
+common_start_date,开始日期,start date
+common_end_date,结束日期,end date
+common_register,注册,registration
+common_verified,认证,verification
+common_trading,交易,trading
+common_second_register,二级注册,secondary registration
+common_account,账号,account
+common_add,新增,add
+common_app_name,App名称,app name
+common_back,返回,return
+common_balance,账户余额,balance
+common_cancel,取消,cancel
+common_change_pwd,修改密码,change password
+common_confirm,确定,confirm
+common_confirm_pwd,确认密码,confirm
+common_contant,联系人,contact
+common_create,创建,create
+common_create_time,创建时间,creation time
+common_date,日期,date
+common_delete,删除,delete
+common_delete_cancel,取消删除,undelete
+common_delete_success,删除成功,successfully
+common_desciption,描述,desciption
+common_detail,详情,detail
+common_disable_cancel,禁用取消,disable cancel
+common_disable_status,禁用,disable
+common_disabled_status,已禁用,disabled
+common_edit,编辑,edit
+common_enable_cancel,启用取消,enable cancel
+common_enable_status,启用,enable
+common_hello,您好,hello
+common_input,请输入,ple input
+common_login,登录,login
+common_logout,登出,login out
+common_merchant_back,商家后台,merchant backend
+common_modify,修改,modify
+common_modify_person,修改人,modify person
+common_modify_time,修改时间,modify time
+common_not_enabled_status,未启用,not enable
+common_operate_time,操作时间,operate time
+common_operation,操作,operation
+common_operator,操作人,operator
+common_order,序号,Serial number
+common_password,密码,password
+common_passwordTips,您当前的密码安全系数低，请进行修改密码,"Your current password security factor is low, it is recommended that you change your password immediately"
+common_pwd_disparity,两次密码不一致,different password
+common_remark,备注,remark
+common_required,必填,required
+common_reset_password,重置密码,reset
+common_save,保存,save
+common_save_success,保存成功,successfully
+common_search,搜索,search
+common_advanced_search,高级搜索,advanced search
+common_search_reset,重置,reset
+common_select_option,请选择,select
+common_status,状态,status
+common_submit,提交,submit
+common_time,时间,time
+common_tips,提示,tips
+common_title,百川商户管理,Merchant Management
+common_to,至,to
+common_type,类型,type
+common_tips_confirm,确认提示,Confirm prompt
+common_upload,上传,upload
+common_valid_account,用户名,user name
+common_valid_number,只允许输入数字,Only allow numbers
+common_valid_pwd,请输入4-18位字母或数字,Please enter 4-18 letters or numbers
+common_select_time,请选择时间,Please selet time
+common_excel_type,请上传.xls或.xlsx格式的文件，大小不超过2MB,"The type must be excel, and the size must be less than 2M"

@@ -7,7 +7,8 @@
     "dev": "vue-cli-service serve",
     "build:test": "vue-cli-service build --mode test",
     "build:prod": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "csv2json": "node ./scripts/csvToJson.js"
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
@@ -42,6 +43,7 @@
     "@vue/eslint-config-typescript": "^7.0.0",
     "babel-loader": "^8.2.2",
     "compression-webpack-plugin": "^6.1.1",
+    "csv-parse": "^4.16.3",
     "eslint": "^7.23.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
