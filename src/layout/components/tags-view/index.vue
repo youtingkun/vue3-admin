@@ -1,16 +1,12 @@
 <template>
   <div id="tags-view-container" class="tags-view-container">
-    <ScrollPane
-      ref="scrollPaneRef"
-      class="tags-view-wrapper"
-      @scroll="handleScroll"
-    >
+    <ScrollPane ref="scrollPaneRef" class="tags-view-wrapper" @scroll="handleScroll">
       <router-link
         v-for="tag in visitedViews"
-        ref="tag"
+        ref="tag1"
         :key="tag.path"
         :class="isActive(tag) ? 'active' : ''"
-        :to="{path: tag.path, query: tag.query, fullPath: tag.fullPath}"
+        :to="{ path: tag.path, query: tag.query, fullPath: tag.fullPath }"
         tag="span"
         class="tags-view-item"
         @click.middle="!isAffix(tag) ? closeSelectedTag(tag) : ''"
@@ -24,23 +20,11 @@
         />
       </router-link>
     </ScrollPane>
-    <ul
-      v-show="visible"
-      :style="{left: left + 'px', top: top + 'px'}"
-      class="contextmenu"
-    >
-      <li @click="refreshSelectedTag(selectedTag)">
-        刷新
-      </li>
-      <li v-if="!isAffix(selectedTag)" @click="closeSelectedTag(selectedTag)">
-        关闭
-      </li>
-      <li @click="closeOthersTags">
-        关闭其它
-      </li>
-      <li @click="closeAllTags(selectedTag)">
-        关闭所有
-      </li>
+    <ul v-show="visible" :style="{ left: left + 'px', top: top + 'px' }" class="contextmenu">
+      <li @click="refreshSelectedTag(selectedTag)">刷新</li>
+      <li v-if="!isAffix(selectedTag)" @click="closeSelectedTag(selectedTag)">关闭</li>
+      <li @click="closeOthersTags">关闭其它</li>
+      <li @click="closeAllTags(selectedTag)">关闭所有</li>
     </ul>
   </div>
 </template>
@@ -132,10 +116,7 @@ export default defineComponent({
             console.warn(err)
           })
         }
-        store.dispatch(
-          TagsActionTypes.ACTION_DEL_OTHER_VIEW,
-          state.selectedTag as TagView
-        )
+        store.dispatch(TagsActionTypes.ACTION_DEL_OTHER_VIEW, state.selectedTag as TagView)
       },
       closeAllTags: (view: TagView) => {
         store.dispatch(TagsActionTypes.ACTION_DEL_ALL_VIEWS, undefined)
@@ -201,10 +182,7 @@ export default defineComponent({
       for (const tag of state.affixTags) {
         // 必须含有 name 属性
         if (tag.name) {
-          store.dispatch(
-            TagsActionTypes.ACTION_ADD_VISITED_VIEW,
-            tag as TagView
-          )
+          store.dispatch(TagsActionTypes.ACTION_ADD_VISITED_VIEW, tag as TagView)
         }
       }
     }
@@ -223,13 +201,10 @@ export default defineComponent({
       }
       for (const tag of tags) {
         if ((tag.to as TagView).path === currentRoute.path) {
-          (scrollPaneRef.value as any).moveToCurrentTag(tag)
+          ;(scrollPaneRef.value as any).moveToCurrentTag(tag)
           // When query is different then update
           if ((tag.to as TagView).fullPath !== currentRoute.fullPath) {
-            store.dispatch(
-              TagsActionTypes.ACTION_UPDATE_VISITED_VIEW,
-              currentRoute
-            )
+            store.dispatch(TagsActionTypes.ACTION_UPDATE_VISITED_VIEW, currentRoute)
           }
         }
       }
