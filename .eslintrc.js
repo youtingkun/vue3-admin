@@ -34,11 +34,12 @@ module.exports = {
     'vue/brace-style': 'error',
     'vue/camelcase': 'error',
     'vue/comma-dangle': 'error',
+    'vue/object-curly-spacing': 'off',
     'vue/component-name-in-template-casing': 'error',
+    'vue/singleline-html-element-content-newline': 'off',
     'vue/eqeqeq': 'error',
     'vue/key-spacing': 'error',
     'vue/match-component-file-name': 'error',
-    'vue/object-curly-spacing': 'error',
     'vue/max-attributes-per-line': 'off',
     'vue/html-closing-bracket-newline': 'off',
     'no-useless-escape': 'off',
@@ -49,6 +50,7 @@ module.exports = {
         allowedNames: ['self'] // Allow `const self = this`; `[]` by default
       }
     ],
+    '@typescript-eslint/no-extra-semi': 'off',
     'vue/attribute-hyphenation': 'off',
     'vue/custom-event-name-casing': 'off',
     '@typescript-eslint/no-unused-vars': 'off'
