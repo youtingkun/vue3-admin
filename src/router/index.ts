@@ -1,7 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import nested from './modules/nested'
 const Layout = () => import('@/layout/index.vue')
-const compositionApi = () => import('@/views/composition-api/index.vue')
 const tableList = () => import('@/views/table-list/index.vue')
 const directive = () => import('@/views/directive/index.vue')
 const temp = () => import('@/views/temp/index.vue')
@@ -48,27 +47,7 @@ export const constantRoutes: Array<RouteRecordRaw> = [
       }
     ]
   },
-  {
-    path: '/composition-api',
-    name: 'compositionApi',
-    component: Layout,
-    meta: {
-      title: 'composition-api',
-      icon: 'dashboard',
-      alwaysShow: true
-    },
-    children: [
-      {
-        path: 'index',
-        component: compositionApi,
-        name: 'compositionApi-index',
-        meta: {
-          title: 'composition-api-index',
-          icon: 'dashboard'
-        }
-      }
-    ]
-  },
+
   {
     path: '/table-list',
     name: 'tableList',
